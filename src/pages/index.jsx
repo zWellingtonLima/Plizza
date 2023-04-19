@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
+import Hero from "./Hero"
 
 export default function Home() {
   return (
@@ -8,9 +9,8 @@ export default function Home() {
         <title>Master Plizza</title>
       </Head>
 
-      <Header />
-      
-      <main></main>
+      <Header />      
+      <Hero />
       
       <footer></footer>
     </>
