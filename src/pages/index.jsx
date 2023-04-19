@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
-import Hero from "./Hero"
+import Hero from "./Hero";
 
 export default function Home() {
   return (
@@ -8,10 +8,11 @@ export default function Home() {
       <Head>
         <title>Master Plizza</title>
       </Head>
+      <Header />
+      <main>
+        <Hero />
+      </main>
 
-      <Header />      
-      <Hero />
-      
       <footer></footer>
     </>
   );

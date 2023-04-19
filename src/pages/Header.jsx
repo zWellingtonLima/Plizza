@@ -6,19 +6,19 @@ import { MdOutlineDeliveryDining } from "react-icons/md";
 
 import { DynaPuff, Calistoga } from "next/font/google";
 
-const dynaPuff = DynaPuff({
+export const dynaPuff = DynaPuff({
   subsets: ["latin"],
   weight: ["400"],
 });
 
-const calisto = Calistoga({
+export const calisto = Calistoga({
   subsets: ["latin"],
   weight: ["400"],
 });
 
 export default function Header() {
   return (
-    <header className="container mx-auto max-w-7xl border-b-2 border-orange-200">
+    <header className="container mx-auto border-b-2 border-orange-200">
       <nav className="flex px-3">
         <div className="flex flex-initial">
           <a
@@ -49,18 +49,22 @@ export default function Header() {
           </a>
         </div>
 
-        <div className={`${calisto.className} flex flex-initial justify-end items-center space-x-1 text-lg`}>
+        <div
+          className={`${calisto.className} flex flex-initial justify-end items-center space-x- text-lg gap-2`}
+        >
           <FiPhoneCall className="w-6 h-6" />
           <span>(+351) 987-654-321</span>
           <a href="#">
-            <MdOutlineDeliveryDining className="w-10 h-10 m-2 text-orange-500 mx-5" />
+            <MdOutlineDeliveryDining className="w-10 h-10 text-orange-500 mx-2" />
           </a>
           <a
             href="#"
             className="text-white flex bg-gradient-to-b from-orange-500 to-yellow-500 rounded-lg p-2 gap-2 hover:from-orange-400 hover:to-yellow-400"
           >
-            <AiOutlineUser className="w-6 h-6" />
-            <button>Sign in</button>
+            <button className="flex gap-2">
+              <AiOutlineUser className="w-6 h-6" />
+              Sign in
+            </button>
           </a>
         </div>
       </nav>
