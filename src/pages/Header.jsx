@@ -18,7 +18,7 @@ export const calisto = Calistoga({
 
 export default function Header() {
   return (
-    <header className="container mx-auto border-b-2 border-orange-200">
+    <header className="container mx-auto   shadow-md shadow-orange-100">
       <nav className="flex px-3">
         <div className="flex flex-initial">
           <a
