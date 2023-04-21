@@ -18,56 +18,58 @@ export const calisto = Calistoga({
 
 export default function Header() {
   return (
-    <header className="container mx-auto   shadow-md shadow-orange-100">
-      <nav className="flex px-3">
-        <div className="flex flex-initial">
-          <a
-            href="#"
-            className={`${dynaPuff.className} text-xl text-orange-500 flex items-center`}
-          >
-            <Image
-              src="/pizza.png"
-              alt="Master Plizza logo"
-              width={70}
-              height={10}
-            />
-            <span>Master Plizza</span>
-          </a>
-        </div>
+    <header className="bg-white shadow-md shadow-orange-100">
+      <div className="max-w-7xl mx-auto">
+        <nav className="flex">
+          <div className="flex flex-initial">
+            <a
+              href="#"
+              className={`${dynaPuff.className} text-xl text-orange-500 flex items-center`}
+            >
+              <Image
+                src="/pizza.png"
+                alt="Master Plizza logo"
+                width={70}
+                height={10}
+              />
+              <span>Master Plizza</span>
+            </a>
+          </div>
 
-        <div
-          className={`${calisto.className} flex flex-1 justify-center items-center content-center text-lg`}
-        >
-          <a className="p-3 hover:text-orange-600 transition-colors" href="#">
-            Why choose us?
-          </a>
-          <a className="p-3 hover:text-orange-600 transition-colors" href="#">
-            Our Plizzas
-          </a>
-          <a className="p-3 hover:text-orange-600 transition-colors" href="#">
-            Contact
-          </a>
-        </div>
-
-        <div
-          className={`${calisto.className} flex flex-initial justify-end items-center space-x- text-lg gap-2`}
-        >
-          <FiPhoneCall className="w-6 h-6" />
-          <span>(+351) 987-654-321</span>
-          <a href="#">
-            <MdOutlineDeliveryDining className="w-10 h-10 text-orange-500 mx-2" />
-          </a>
-          <a
-            href="#"
-            className="text-white flex bg-gradient-to-b from-orange-500 to-yellow-500 rounded-lg p-2 gap-2 hover:from-orange-400 hover:to-yellow-400"
+          <div
+            className={`${calisto.className} flex flex-1 justify-center items-center content-center text-lg`}
           >
-            <button className="flex gap-2">
-              <AiOutlineUser className="w-6 h-6" />
-              Sign in
-            </button>
-          </a>
-        </div>
-      </nav>
+            <a className="p-3 hover:text-orange-600 transition-colors" href="#">
+              Why choose us?
+            </a>
+            <a className="p-3 hover:text-orange-600 transition-colors" href="#">
+              Our Plizzas
+            </a>
+            <a className="p-3 hover:text-orange-600 transition-colors" href="#">
+              Contact
+            </a>
+          </div>
+
+          <div
+            className={`${calisto.className} flex flex-initial justify-end items-center space-x- text-lg gap-2`}
+          >
+            <FiPhoneCall className="w-6 h-6" />
+            <span>(+351) 987-654-321</span>
+            <a href="#">
+              <MdOutlineDeliveryDining className="w-10 h-10 text-orange-500 mx-2" />
+            </a>
+            <a
+              href="#"
+              className="text-white flex bg-gradient-to-b from-orange-500 to-yellow-500 rounded-lg p-2 gap-2 hover:from-orange-400 hover:to-yellow-400"
+            >
+              <button className="flex gap-2">
+                <AiOutlineUser className="w-6 h-6" />
+                Sign in
+              </button>
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 }
